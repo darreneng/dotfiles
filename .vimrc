@@ -1,6 +1,6 @@
 " Darren's vimrc
 
-" Pretty visual stuff
+" Pretty UI stuff
 syntax enable           " turn syntax color on
 set cursorline          " shows pretty line for current line
 set number              " show line number
@@ -13,6 +13,13 @@ set tabstop=4           " # of spaces for <TAB> character
 set softtabstop=4       " # of spaces for <TAB> when editing
 set expandtab           " tabs are spaces
 set smartindent         " indents when necessary
+
+" Automatically set tabs for indices
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 expandtab
+
+" Filetype indentation
 filetype indent on      " indents based on file type
 
 " foldfoldfold
