@@ -14,7 +14,7 @@ set softtabstop=4       " # of spaces for <TAB> when editing
 set expandtab           " tabs are spaces
 set smartindent         " indents when necessary
 
-" Automatically set tabs for indices
+" Automatically set tabs for different files
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 expandtab
@@ -33,3 +33,4 @@ nnoremap <space> za
 " other cool stuff
 set wildmenu            " visual autocomplete for command menu
 set autoread            " auto update file if it's been changed outside of vim
+set mouse=a             " enable using the mouse for stuff
