@@ -17,14 +17,13 @@ set smartindent         " indents when necessary
 " Automatically set tabs for different files
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
-autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 expandtab
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
 
 " Filetype indentation
 filetype indent on      " indents based on file type
 
 " foldfoldfold
-set foldenable          " turn folding on
-set foldmethod=indent   " fold based on indent
+set foldenable          " turn folding on set foldmethod=indent   " fold based on indent
 set foldlevelstart=10   " open folds < 10 lines by default
 set foldnestmax=10      " max 10 nested folds
 " space open/closes folds
@@ -34,3 +33,8 @@ nnoremap <space> za
 set wildmenu            " visual autocomplete for command menu
 set autoread            " auto update file if it's been changed outside of vim
 set mouse=a             " enable using the mouse for stuff
+
+" color scheme
+set background=light
+let g:solarized_termcolors=256
+colorscheme solarized
