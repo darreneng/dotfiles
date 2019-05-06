@@ -34,6 +34,11 @@ set wildmenu            " visual autocomplete for command menu
 set autoread            " auto update file if it's been changed outside of vim
 set mouse=a             " enable using the mouse for stuff
 
+" search
+set ignorecase          " ignore case when searching
+set hlsearch            " highlight all matching phrases
+set incsearch           " show partial matches for a search phrase
+
 " color scheme
 set background=light
 let g:solarized_termcolors=256
