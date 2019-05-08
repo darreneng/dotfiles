@@ -20,7 +20,9 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
 
 " Filetype indentation
+filetype on             " Enable filetype detection
 filetype indent on      " indents based on file type
+filetype plugin on      " Enable filetype-specific plugins
 
 " foldfoldfold
 set foldenable          " turn folding on set foldmethod=indent   " fold based on indent
