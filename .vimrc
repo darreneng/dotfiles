@@ -12,7 +12,7 @@ set showmatch           " highlight matching parenthesis
 set tabstop=4           " # of spaces for <TAB> character
 set softtabstop=4       " # of spaces for <TAB> when editing
 set expandtab           " tabs are spaces
-set smartindent         " indents when necessary
+set autoindent          " copy indentation from previous line
 
 " Automatically set tabs for different files
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
