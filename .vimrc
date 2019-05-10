@@ -9,6 +9,7 @@ set number              " show line number
 set ruler               " show row,col numbers at bottom
 set showcmd             " display whether in insert mode
 set showmatch           " highlight matching parenthesis
+set showtabline=2       " always show tab label
 
 " Indentation
 set tabstop=2           " # of spaces for <TAB> character
