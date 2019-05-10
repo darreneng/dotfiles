@@ -11,8 +11,8 @@ set showcmd             " display whether in insert mode
 set showmatch           " highlight matching parenthesis
 
 " Indentation
-set tabstop=4           " # of spaces for <TAB> character
-set softtabstop=4       " # of spaces for <TAB> when editing
+set tabstop=2           " # of spaces for <TAB> character
+set softtabstop=2       " # of spaces for <TAB> when editing
 set expandtab           " tabs are spaces
 set autoindent          " copy indentation from previous line
 
