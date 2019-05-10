@@ -46,6 +46,7 @@ set hlsearch            " highlight all matching phrases
 set incsearch           " show partial matches for a search phrase
 
 " color scheme
-set background=light
-let g:solarized_termcolors=256
-colorscheme solarized
+if (has("termguicolors"))
+  set termguicolors
+endif
+colorscheme OceanicNext
