@@ -1,53 +1,96 @@
 " Darren's vimrc
 
-set nocompatible        " we're using vim, not vi!
+" 0 random ================================================================ {{{
+" we're using vim, not vi!
+set nocompatible
 
-" Pretty UI stuff
-syntax enable           " turn syntax color on
-set cursorline          " shows pretty line for current line
-set number              " show line number
-set ruler               " show row,col numbers at bottom
-set showcmd             " display whether in insert mode
-set showmatch           " highlight matching parenthesis
-set showtabline=2       " always show tab label
+" ========================================================================= }}}
+" 1 Pretty UI stuff ======================================================= {{{
 
-" Indentation
-set tabstop=2           " # of spaces for <TAB> character
-set softtabstop=2       " # of spaces for <TAB> when editing
-set expandtab           " tabs are spaces
-set autoindent          " copy indentation from previous line
+" turn syntax color on
+syntax enable
+" shows pretty line for current line
+set cursorline
+" show line number
+set number
+" show row,col numbers at bottom
+set ruler
+" display whether in insert mode
+set showcmd
+" highlight matching parenthesis
+set showmatch
+" always show tab label
+set showtabline=2
+
+" ========================================================================= }}}
+" 2 Indentation =========================================================== {{{
+
+" # of spaces for <TAB> character
+set tabstop=2
+" # of spaces for <TAB> when editing
+set softtabstop=2
+" tabs are spaces
+set expandtab
+" copy indentation from previous line
+set autoindent
 
 " Automatically set tabs for different files
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
 
-" Filetype indentation
-filetype on             " Enable filetype detection
-filetype indent on      " indents based on file type
-filetype plugin on      " Enable filetype-specific plugins
+" Filetype indentation ====================================================
 
-" foldfoldfold
-set foldenable          " turn folding on set foldmethod=indent   " fold based on indent
-set foldlevelstart=10   " open folds < 10 lines by default
-set foldnestmax=10      " max 10 nested folds
+" Enable filetype detection
+filetype on
+" indents based on file type
+filetype indent on
+" Enable filetype-specific plugins
+filetype plugin on
+
+" ========================================================================= }}}
+" 3 foldfoldfold ========================================================== {{{
+
+" fold based on indent
+" set foldmethod=indent
+" turn folding on 
+set foldenable
+" open folds < 10 lines by default
+set foldlevelstart=10
+" max 10 nested fields
+set foldnestmax=10
 " space open/closes folds
 nnoremap <space> za
 
-" other cool stuff
-set wildmenu            " visual autocomplete for command menu
-set autoread            " auto update file if it's been changed outside of vim
-set mouse=a             " enable using the mouse for stuff
+" ========================================================================= }}}
+" 4 other cool stuff ====================================================== {{{
+
+" visual autocomplete for command menu
+set wildmenu
+" auto update file if it's been changed outside of vim
+set autoread
+" enable using the mouse for stuff
+set mouse=a
 " use backspace normally in insert mode
 set backspace=indent,eol,start
 
-" search
-set ignorecase          " ignore case when searching
-set hlsearch            " highlight all matching phrases
-set incsearch           " show partial matches for a search phrase
+" ========================================================================= }}}
+" 5 search ================================================================ {{{
 
-" color scheme
+" ignore case when searching
+set ignorecase
+" highlight all matching phrases
+set hlsearch
+" show partial matches for a search phrase
+set incsearch
+
+" ========================================================================= }}}
+" 6 color scheme ========================================================== {{{
+
+" something something make colors work
 if (has("termguicolors"))
   set termguicolors
 endif
+" use oceanic next theme (make sure we have vim colors!)
 colorscheme OceanicNext
+" ========================================================================= }}}
