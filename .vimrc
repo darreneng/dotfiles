@@ -1,5 +1,7 @@
 " Darren's vimrc
 
+set nocompatible        " we're using vim, not vi!
+
 " Pretty UI stuff
 syntax enable           " turn syntax color on
 set cursorline          " shows pretty line for current line
