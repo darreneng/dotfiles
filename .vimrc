@@ -37,6 +37,8 @@ nnoremap <space> za
 set wildmenu            " visual autocomplete for command menu
 set autoread            " auto update file if it's been changed outside of vim
 set mouse=a             " enable using the mouse for stuff
+" use backspace normally in insert mode
+set backspace=indent,eol,start
 
 " search
 set ignorecase          " ignore case when searching
