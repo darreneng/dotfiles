@@ -110,3 +110,6 @@ alias inflate='ruby -r zlib -e "STDOUT.write Zlib::Inflate.inflate(STDIN.read)"'
 alias git='noglob git'
 
 source ~/.profile
+
+# use `config` instead of `git` when working with dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME'
