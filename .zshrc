@@ -113,3 +113,8 @@ source ~/.profile
 
 # use `config` instead of `git` when working with dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME'
+ 
+# use neovim instead of vim
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+fi
