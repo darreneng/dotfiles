@@ -13,7 +13,17 @@ config commit -m "Add vimrc"
 config push
 ```
 
+
 This setup was inspired by this [dotfiles tutorial](https://www.atlassian.com/git/tutorials/dotfiles).
+
+## Setup
+
+I maintain a separate `.zshrc` for personal (`.zshrc.personal`) and work (`.zshrc.work`). To pick one, run:
+
+```sh
+ln -siv .zshrc.personal .zshrc
+```
+
 
 ## TODO: 
 - document/automate installing dotfiles on a new system
