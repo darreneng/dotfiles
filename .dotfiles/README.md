@@ -18,14 +18,26 @@ This setup was inspired by this [dotfiles tutorial](https://www.atlassian.com/gi
 
 ## Setup
 
+```sh
+mkdir -p .dotfiles/.git
+git clone --bare https://github.com/darreneng/dotfiles.git ~/.dotfiles/.git
+
+# copy the alias from ~/.zshrc and define in current scope
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME'
+
+# checkout content. this may cause merge conflicts
+config checkout
+
+config config --local status.showUntrackedFiles no
+```
+
+
+### zsh
+
 I maintain a separate `.zshrc` for personal (`.zshrc.personal`) and work (`.zshrc.work`). To pick one, run:
 
 ```sh
 ln -siv .zshrc.personal .zshrc
+# or
+ln -siv .zshrc.work .zshrc
 ```
-
-
-## TODO: 
-- document/automate installing dotfiles on a new system
-- get path autocompletion to work for the `config` alias
-
