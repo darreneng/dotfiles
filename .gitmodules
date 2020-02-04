@@ -7,3 +7,6 @@
 [submodule ".vim/pack/foo/start/vim-javascript"]
 	path = .vim/pack/foo/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/pack/colors/opt/oceanic-next"]
+	path = .vim/pack/colors/opt/oceanic-next
+	url = https://github.com/mhartington/oceanic-next.git
