@@ -34,10 +34,10 @@ config config --local status.showUntrackedFiles no
 
 ### zsh
 
-I maintain a separate `.zshrc` for personal (`.zshrc.personal`) and work (`.zshrc.work`). To pick one, run:
+I maintain a separate `.zshrc` for personal (`.personal.zshrc`) and work (`.work.zshrc`). To pick one, run:
 
 ```sh
-ln -siv .zshrc.personal .zshrc
+ln -siv .personal.zshrc .zshrc
 # or
-ln -siv .zshrc.work .zshrc
+ln -siv .work.zshrc .zshrc
 ```
