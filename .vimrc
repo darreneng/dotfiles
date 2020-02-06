@@ -95,6 +95,11 @@ if has('nvim')
   tnoremap <Esc> <C-\><C-n>
 endif
 
+" Enable fzf.vim plugin. Only works when fzf is installed via homebrew
+set rtp+=/usr/local/opt/fzf
+" Map Ctrl + p to open fuzzy find (FZF)
+nnoremap <c-p> :Files<cr>
+
 " ========================================================================= }}}
 " 5 search ================================================================ {{{
 
