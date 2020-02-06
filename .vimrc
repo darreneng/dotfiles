@@ -73,6 +73,14 @@ set autoread
 set mouse=a
 " use backspace normally in insert mode
 set backspace=indent,eol,start
+" open new split panes to the bottom and right. feels way more natural
+set splitbelow
+set splitright
+" quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
 " ========================================================================= }}}
 " 5 search ================================================================ {{{
@@ -93,6 +101,7 @@ if (has("termguicolors"))
 endif
 " use oceanic next theme (make sure we have vim colors!)
 colorscheme OceanicNext
+
 " ========================================================================= }}}
 " 7 Ocaml ================================================================= {{{
 
