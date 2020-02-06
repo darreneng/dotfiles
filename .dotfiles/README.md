@@ -13,10 +13,11 @@ config commit -m "Add vimrc"
 config push
 ```
 
-
 This setup was inspired by this [dotfiles tutorial](https://www.atlassian.com/git/tutorials/dotfiles).
 
 ## Setup
+
+### Starting from scratch
 
 ```sh
 mkdir -p .dotfiles/.git
@@ -31,6 +32,40 @@ config checkout
 config config --local status.showUntrackedFiles no
 ```
 
+### Updating the repo
+
+```
+config pull --recurse-submodules
+config submodule init
+```
+
+## vim related stuff
+
+vim packages are managed with vim's built-in system and git submodules
+
+### Adding submodules:
+
+```
+cd ~/.vim/pack/foo/start
+config submodule add <plugin-repo-url>
+```
+
+### Updating submodules:
+
+```
+config submodule update --remote --merge
+config commit
+```
+
+### Deleting submodules
+
+Assuming the plugin is located at `~/.vim/pack/foo/start/vim-plugin-name/`
+
+```
+cd ~/.vim/pack/foo/start
+config submodule deinit vim-plugin-name/
+config submodule rm vim-plugin-name/
+```
 
 ### zsh
 
