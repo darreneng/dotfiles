@@ -82,6 +82,11 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" Use <Esc> to exit terminal mode
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+endif
+
 " ========================================================================= }}}
 " 5 search ================================================================ {{{
 
