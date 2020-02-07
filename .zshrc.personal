@@ -118,3 +118,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME'
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
 fi
+
+# Use fd with fzf
+export FZF_DEFAULT_COMMAND='fd --type file'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
