@@ -26,15 +26,19 @@ set showtabline=2
 
 " # of spaces for <TAB> character
 set tabstop=2
-
 " # of spaces for <TAB> when editing
 set softtabstop=2
-
 " tabs are spaces
 set expandtab
-
+" # of spaces when indenting with >
+set shiftwidth=2
+" prefer using shiftwidth for tabs
+set smarttab
 " copy indentation from previous line
 set autoindent
+
+" show whitespace characters
+set list
 
 " Automatically set tabs for different files
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
@@ -85,12 +89,11 @@ set rtp+=/usr/local/opt/fzf
 " Map Ctrl + p to open fuzzy find (FZF)
 nnoremap <c-p> :Files<cr>
 
-" ignore case when searching
+" ignore case when searching unless search includes uppercase characters
 set ignorecase
-
+set smartcase
 " highlight all matching phrases
 set hlsearch
-
 " show partial matches for a search phrase
 set incsearch
 
@@ -100,6 +103,8 @@ if (has("termguicolors"))
 endif
 
 " use oceanic next theme (make sure we have vim colors!)
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
 colorscheme OceanicNext
 
 
