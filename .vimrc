@@ -97,6 +97,11 @@ set hlsearch
 " show partial matches for a search phrase
 set incsearch
 
+" Use keybindings to for global search - depends on vim-agriculture
+nmap <Leader>/ <Plug>RgRawSearch
+vmap <Leader>/ <Plug>RgRawVisualSelection
+nmap <Leader>* <Plug>RgRawWordUnderCursor
+
 " something something make colors work
 if (has("termguicolors"))
   set termguicolors

@@ -19,3 +19,6 @@
 [submodule ".vim/pack/foo/start/vim-fugitive"]
 	path = .vim/pack/foo/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/pack/foo/start/vim-agriculture"]
+	path = .vim/pack/foo/start/vim-agriculture
+	url = https://github.com/jesseleite/vim-agriculture.git
