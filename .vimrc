@@ -1,8 +1,5 @@
 " Darren's vimrc
 
-" we're not using vi
-set nocompatible
-
 " turn syntax color on
 syntax enable
 
