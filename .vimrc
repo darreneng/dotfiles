@@ -51,6 +51,9 @@ set wildmenu
 " auto update file if it's been changed outside of vim
 set autoread
 
+" auto write contents of file when switching buffers
+set autowrite
+
 " enable using the mouse for stuff
 set mouse=a
 
