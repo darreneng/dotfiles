@@ -1,1 +1,9 @@
 --glob=!**/dist/*
+
+# javascript test type
+--type-add
+specjs:*.spec.js
+
+# ruby test type
+--type-add
+testrb:*_test.rb
