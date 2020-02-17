@@ -112,7 +112,7 @@ alias git='noglob git'
 source ~/.profile
 
 # use `dot` instead of `git` when working with dotfiles
-alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/.git --work-tree=$HOME'
+alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/.git'
 
 # use neovim instead of vim
 if type nvim > /dev/null 2>&1; then
