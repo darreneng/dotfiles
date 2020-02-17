@@ -1,42 +1,45 @@
 # Darren's Dotfiles
 
-The dotfiles in this folder rely on a [bare repository](https://www.saintsjd.com/2011/01/what-is-a-bare-git-repository/) instead of symlinks.
+Instead of symlinking files into the home directory, we rely on some trickery with git's working tree.
 
-The `dot` alias is used for managing dotfiles in the home directory.
-
-For example:
-
-```sh
-dot status
-dot add .vimrc
-dot commit -m "Add vimrc"
-dot push
-```
-
-This setup was inspired by this [dotfiles tutorial](https://www.atlassian.com/git/tutorials/dotfiles).
+This setup was originally inspired by this [dotfiles tutorial](https://www.atlassian.com/git/tutorials/dotfiles) but doesn't follow it exactly.
 
 ## Setup
 
 ### Starting from scratch
 
 ```sh
-mkdir -p .dotfiles/.git
-git clone --bare https://github.com/darreneng/dotfiles.git ~/.dotfiles/.git
-
-# copy the alias from ~/.zshrc and define in current scope
-alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME'
-
-# checkout content. this may cause merge conflicts
-dot checkout
-
-dot config --local status.showUntrackedFiles no
+cd ~
+git clone --no-checkout https://github.com/darreneng/dotfiles.git
+git config --local core.worktree $HOME
+git config --local status.showUntrackedFiles no
 ```
+
+This part might cause merge conflicts!
+
+```sh
+cd ~
+git --git-dir=$HOME/dotfiles/.git checkout .
+```
+
+To make dotfiles easier to work with, both `.zshrc` files define a `dot` alias that can be run from anywhere.
 
 ### Updating the repo
 
-```
-dot pull --recurse-submodules
+This should also be run when first setting up the repository.
+
+```sh
 dot submodule init
+dot pull --recurse-submodules
+```
+
+### Pushing updates
+
+```sh
+dot status
+dot add .vimrc
+dot commit -m "Add vimrc"
+dot push
 ```
 
 ## vim related stuff
@@ -67,7 +70,7 @@ dot submodule deinit vim-plugin-name/
 dot submodule rm vim-plugin-name/
 ```
 
-### zsh
+## zsh
 
 I maintain a separate `.zshrc` for personal (`.zshrc.personal`) and work (`.zshrc.work`). To pick one, run:
 
