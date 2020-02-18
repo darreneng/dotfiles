@@ -118,6 +118,11 @@ let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 colorscheme OceanicNext
 
+" test.vim
+let test#strategy = "neovim"
+let test#ruby#rails#executable = 'test_launcher'
+nmap <Leader>t :TestNearest<cr>
+nmap <Leader>r :TestLast<cr>
 
 
 " =============== OCaml =============== 

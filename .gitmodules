@@ -28,3 +28,6 @@
 [submodule ".vim/pack/foo/start/vim-rails"]
 	path = .vim/pack/foo/start/vim-rails
 	url = https://github.com/tpope/vim-rails.git
+[submodule ".vim/pack/foo/start/vim-test"]
+	path = .vim/pack/foo/start/vim-test
+	url = https://github.com/janko/vim-test.git
