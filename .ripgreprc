@@ -4,6 +4,10 @@
 --type-add
 specjs:*.spec.js
 
+# rails erb type
+--type-add
+erb:*.html.erb
+
 # ruby test type
 --type-add
 testrb:*_test.rb
