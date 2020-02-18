@@ -128,6 +128,7 @@ alias prop="cd ~/src/apm_bundle/apps/property/"
 alias apmb="cd ~/src/apm_bundle/"
 alias berit="bundle exec ruby -I test"
 alias restart="script/stop && script/start"
+alias glm="git pull origin master"
 
 # rubocops everything in the git diff
 alias rdiff="git ls-files -m | xargs ls -1 2>/dev/null | grep ‘\.rb$’ | xargs rubocop"
