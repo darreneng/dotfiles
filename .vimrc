@@ -41,6 +41,8 @@ set list
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 expandtab
+noremap <silent> k gk
+noremap <silent> j gj
 
 " Enable filetype + plugin detection
 filetype plugin indent on
