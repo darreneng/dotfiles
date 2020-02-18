@@ -8,6 +8,11 @@ This setup was originally inspired by this [dotfiles tutorial](https://www.atlas
 
 ### Starting from scratch
 
+Clone the repository without checking out a working tree. Then configure it so that:
+
+- the home directory is the default working tree.
+- untracked files aren't displayed by default when running `git status`. This is important because the home directory is the working tree, so we don't want to show everything.
+
 ```sh
 cd ~
 git clone --no-checkout https://github.com/darreneng/dotfiles.git
@@ -19,7 +24,7 @@ This part might cause merge conflicts!
 
 ```sh
 cd ~
-git --git-dir=$HOME/dotfiles/.git checkout .
+git --git-dir=$HOME/dotfiles/.git checkout
 ```
 
 To make dotfiles easier to work with, both `.zshrc` files define a `dot` alias that can be run from anywhere.
