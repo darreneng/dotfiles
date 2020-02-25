@@ -100,6 +100,9 @@ set hlsearch
 " show partial matches for a search phrase
 set incsearch
 
+" Use Ctrl + N to clear the highlighting of :set hlsearch
+nnoremap <C-N> :nohlsearch<cr>
+
 " Use keybindings to for global search - depends on vim-agriculture
 nmap <Leader>/ <Plug>RgRawSearch
 vmap <Leader>/ <Plug>RgRawVisualSelection
