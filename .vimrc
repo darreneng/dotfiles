@@ -105,7 +105,7 @@ nnoremap <C-N> :nohlsearch<cr>
 
 " Use keybindings to for global search - depends on vim-agriculture
 nmap <Leader>/ <Plug>RgRawSearch
-vmap <Leader>/ <Plug>RgRawVisualSelection
+vmap <Leader>* <Plug>RgRawVisualSelection
 nmap <Leader>* <Plug>RgRawWordUnderCursor
 
 " something something make colors work
