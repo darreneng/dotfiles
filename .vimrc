@@ -90,7 +90,9 @@ endif
 set rtp+=/usr/local/opt/fzf
 
 " Map Ctrl + p to open fuzzy find (FZF)
-nnoremap <c-p> :Files<cr>
+nnoremap <C-p> :Files<cr>
+" Fuzzy find buffers (FZF)
+nnoremap <Leader>b :Buffers<cr>
 
 " ignore case when searching unless search includes uppercase characters
 set ignorecase
