@@ -31,3 +31,6 @@
 [submodule ".vim/pack/foo/start/vim-test"]
 	path = .vim/pack/foo/start/vim-test
 	url = https://github.com/janko/vim-test.git
+[submodule ".vim/pack/foo/start/vim-obsession"]
+	path = .vim/pack/foo/start/vim-obsession
+	url = https://github.com/tpope/vim-obsession.git
