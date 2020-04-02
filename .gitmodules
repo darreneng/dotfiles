@@ -37,3 +37,6 @@
 [submodule ".vim/pack/foo/start/vim-rhubarb"]
 	path = .vim/pack/foo/start/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
+[submodule ".vim/pack/foo/start/vim-repeat"]
+	path = .vim/pack/foo/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
