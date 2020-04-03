@@ -64,6 +64,9 @@ set backspace=indent,eol,start
 set splitbelow
 set splitright
 
+" how often vim writes the swap file in ms. also controls vim-gitgutter
+set updatetime=100
+
 " Leader
 let mapleader = " "
 
