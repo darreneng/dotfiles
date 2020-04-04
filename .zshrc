@@ -64,6 +64,9 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  vi-mode
+  rails
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -100,12 +103,6 @@ source $ZSH/oh-my-zsh.sh
 # Allow pretty ls colors
 unset LSCOLORS
 
-# opam configuration
-test -r /Users/darren/.opam/opam-init/init.zsh && . /Users/darren/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
-# CL alias for running zlib. Used for Building Git book
-alias inflate='ruby -r zlib -e "STDOUT.write Zlib::Inflate.inflate(STDIN.read)"'
-
 # don't glob git
 alias git='noglob git'
 
@@ -128,3 +125,9 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # where to look for ripgreprc
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
+
+# Vi mode
+bindkey -v
+export KEYTIMEOUT=1
+
+source ~/.zshrc.local
