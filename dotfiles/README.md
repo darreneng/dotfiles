@@ -77,10 +77,14 @@ dot submodule rm vim-plugin-name/
 
 ## zsh
 
-I maintain a separate `.zshrc` for personal (`.zshrc.personal`) and work (`.zshrc.work`). To pick one, run:
+In addition to the main `.zshrc` file, I maintain files that contain settings specific to personal (`.zshrc.personal`) and work (`.zshrc.work`) environments.
 
+To pick the personal machine config, run:
 ```sh
-ln -siv .zshrc.personal .zshrc
-# or
-ln -siv .zshrc.work .zshrc
+ln -siv ~/.zshrc.personal ~/.zshrc.local
+```
+
+Or to pick the work machine config:
+```sh
+ln -siv ~/.zshrc.work ~/.zshrc.local
 ```
