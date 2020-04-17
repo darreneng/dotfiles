@@ -85,8 +85,6 @@ nnoremap <M-k> <C-w>k
 nnoremap <M-l> <C-w>l
 
 if has('nvim')
-  " Use <Esc> to exit terminal mode
-  tnoremap <Esc> <C-\><C-n>
   " Enter insert mode when entering a terimal
   autocmd BufWinEnter,WinEnter term://* startinsert
   " Go back to normal mode when leaving a terminal window
