@@ -98,6 +98,8 @@ set rtp+=/usr/local/opt/fzf
 nnoremap <C-p> :Files<cr>
 " Fuzzy find buffers (FZF)
 nnoremap <Leader>b :Buffers<cr>
+" Kinda like tselect but uses FZF instead of more-prompt
+nnoremap <Leader>] :execute "Tags" expand('<cword>')<cr>
 
 " ignore case when searching unless search includes uppercase characters
 set ignorecase
