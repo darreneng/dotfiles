@@ -70,6 +70,9 @@ set updatetime=100
 " Leader
 let mapleader = " "
 
+" Remap Y to yank from the cursor to the end of line instead
+nnoremap Y y$
+
 " use `ALT+{h,j,k,l}` to navigate windows from any mode
 tnoremap <M-h> <C-\><C-N><C-w>h
 tnoremap <M-j> <C-\><C-N><C-w>j
