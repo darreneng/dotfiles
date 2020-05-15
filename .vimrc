@@ -126,15 +126,11 @@ if (has("termguicolors"))
 endif
 
 " Netrw settings
-nnoremap <Leader>e :Vexplore<cr>
+nnoremap <Leader>e :Dirvish %<cr>
 " Set default listing style to tree style
 let g:netrw_liststyle = 3
-" Reuse previous window when selecting file
-let g:netrw_browse_split = 4
-" Vertically split netrw preview window
-let g:netrw_preview = 1
-" Specify initial size of netrw window
-let g:netrw_winsize = 30
+" allow netrw to change jumplist
+let g:netrw_keepj = ""
 
 " use oceanic next theme (make sure we have vim colors!)
 let g:oceanic_next_terminal_bold = 1

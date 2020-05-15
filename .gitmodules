@@ -52,3 +52,6 @@
 [submodule ".vim/pack/foo/start/vim-pencil"]
 	path = .vim/pack/foo/start/vim-pencil
 	url = https://github.com/reedes/vim-pencil.git
+[submodule ".vim/pack/foo/start/vim-dirvish"]
+	path = .vim/pack/foo/start/vim-dirvish
+	url = https://github.com/justinmk/vim-dirvish.git
