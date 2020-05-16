@@ -127,20 +127,25 @@ let g:netrw_liststyle = 3
 " allow netrw to change jumplist
 let g:netrw_keepj = ""
 
+" =============== yay COLORS ==============
+
 " something something make colors work
 if (has("termguicolors"))
   set termguicolors
 endif
 
-" use oceanic next theme (make sure we have vim colors!)
+" Themes below
+
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 " colorscheme OceanicNext
 
-" Use seoul256 colorscheme
-" Range: 233 (darkest) - 237 (lightest), Default: 237
-let g:seoul256_background = 233
-colorscheme seoul256
+" Range 233 (darkest) - 237 (lightest), Default 237
+let g:seoul256_background = 235
+" colorscheme seoul256
+
+packadd! dracula
+colorscheme dracula
 
 " test.vim
 let test#strategy = "neovim"
