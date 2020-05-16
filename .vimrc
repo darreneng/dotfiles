@@ -120,11 +120,6 @@ nmap <Leader>/ <Plug>RgRawSearch
 vmap <Leader>* <Plug>RgRawVisualSelection
 nmap <Leader>* <Plug>RgRawWordUnderCursor
 
-" something something make colors work
-if (has("termguicolors"))
-  set termguicolors
-endif
-
 " Netrw settings
 nnoremap <Leader>e :Dirvish %<cr>
 " Set default listing style to tree style
@@ -132,10 +127,20 @@ let g:netrw_liststyle = 3
 " allow netrw to change jumplist
 let g:netrw_keepj = ""
 
+" something something make colors work
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 " use oceanic next theme (make sure we have vim colors!)
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
-colorscheme OceanicNext
+" colorscheme OceanicNext
+
+" Use seoul256 colorscheme
+" Range: 233 (darkest) - 237 (lightest), Default: 237
+let g:seoul256_background = 233
+colorscheme seoul256
 
 " test.vim
 let test#strategy = "neovim"
