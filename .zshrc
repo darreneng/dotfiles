@@ -1,3 +1,6 @@
+# zmodload zsh/zprof
+# Uncomment line above and line at the bottom to profile zsh startup
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -131,3 +134,6 @@ bindkey -v
 export KEYTIMEOUT=1
 
 source ~/.zshrc.local
+
+# Uncomment line below and line at the top to profile zsh startup
+# zprof
