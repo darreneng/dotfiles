@@ -120,12 +120,12 @@ nmap <Leader>/ <Plug>RgRawSearch
 vmap <Leader>* <Plug>RgRawVisualSelection
 nmap <Leader>* <Plug>RgRawWordUnderCursor
 
-" Netrw settings
+" replace netrw with dirvish
 nnoremap <Leader>e :Dirvish %<cr>
-" Set default listing style to tree style
-let g:netrw_liststyle = 3
-" allow netrw to change jumplist
-let g:netrw_keepj = ""
+let g:loaded_netrwPlugin = 1
+command! -nargs=? -complete=dir Explore Dirvish <args>
+command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
+command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
 " =============== yay COLORS ==============
 
