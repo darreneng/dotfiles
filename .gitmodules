@@ -61,3 +61,6 @@
 [submodule ".vim/pack/colors/opt/dracula"]
 	path = .vim/pack/colors/opt/dracula
 	url = https://github.com/dracula/vim.git
+[submodule ".vim/pack/foo/start/vim-endwise"]
+	path = .vim/pack/foo/start/vim-endwise
+	url = https://github.com/tpope/vim-endwise.git
