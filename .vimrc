@@ -151,6 +151,7 @@ colorscheme dracula
 let test#strategy = "neovim"
 let test#ruby#rails#executable = 'test_launcher'
 nmap <Leader>t :TestNearest<cr>
+nmap <Leader>T :TestFile<cr>
 nmap <Leader>r :TestLast<cr>
 
 
