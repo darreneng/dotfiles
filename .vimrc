@@ -65,7 +65,7 @@ set splitbelow
 set splitright
 
 " how often vim writes the swap file in ms. also controls vim-gitgutter
-set updatetime=100
+set updatetime=500
 
 " Leader
 let mapleader = " "
