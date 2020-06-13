@@ -3,6 +3,3 @@ test -r /Users/darren/.opam/opam-init/init.zsh && . /Users/darren/.opam/opam-ini
 
 # CL alias for running zlib. Used for Building Git book
 alias inflate='ruby -r zlib -e "STDOUT.write Zlib::Inflate.inflate(STDIN.read)"'
-
-# print contents of git file
-alias gcfp='git cat-file -p'

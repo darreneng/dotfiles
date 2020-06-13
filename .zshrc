@@ -98,6 +98,9 @@ unset LSCOLORS
 alias git='noglob git'
 
 source ~/.profile
+# more git aliases
+alias gcfp='git cat-file -p'
+alias gai='git add --interactive'
 
 # use `dot` instead of `git` when working with dotfiles
 alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/.git'
