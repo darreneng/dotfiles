@@ -97,7 +97,6 @@ unset LSCOLORS
 # don't glob git
 alias git='noglob git'
 
-source ~/.profile
 # more git aliases
 alias gcfp='git cat-file -p'
 alias gai='git add --interactive'
@@ -125,6 +124,7 @@ bindkey -v
 export KEYTIMEOUT=1
 
 source ~/.zshrc.local
+source ~/.profile
 
 # Use pure prompt
 autoload -U promptinit; promptinit
