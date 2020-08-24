@@ -2,10 +2,6 @@ function gh_remote_path() { # Parses the 'remote path' of the repo: username/rep
   GH_PATH=`git remote -v | tr ':' ' ' | tr '.' ' ' | awk '/push/ {print $4}'`
   echo ${GH_PATH#com/}
 }
-function gh() { # Opens current branch on Github, works for all repos
-  echo 'Opening branch on Github...'
-  open "https://github.com/$(gh_remote_path)/tree/$(current_branch)"
-}
 
 function ghpr() { # Opens new PR for current branch on GitHub, works for all repos
   echo 'Opening branch on Github...'
