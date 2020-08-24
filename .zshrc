@@ -69,13 +69,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -108,6 +101,8 @@ alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/.git'
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
 fi
+
+export EDITOR='nvim'
 
 # Use fd with fzf
 export FZF_DEFAULT_COMMAND='fd --type file'
