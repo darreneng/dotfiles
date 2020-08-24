@@ -11,8 +11,14 @@ function ghpr() { # Opens new PR for current branch on GitHub, works for all rep
 # zsh doesnt like rake tasks with args apparently
 alias brake="noglob bundle exec rake"
 alias rake='noglob rake'
+alias be='noglob bundle exec'
 
-# rake test stuff
+# rails aliases
+alias rc="bundle exec rails console"
+alias rdc="bundle exec rake db:create"
+alias rdm="bundle exec rake db:migrate"
+alias rdr="bundle exec rake db:rollback"
+alias rdd="bundle exec rake db:drop"
 alias rdct="DISABLE_DATABASE_ENVIRONMENT_CHECK=1 RAILS_ENV=test bundle exec rake db:create"
 alias rdmt="DISABLE_DATABASE_ENVIRONMENT_CHECK=1 RAILS_ENV=test bundle exec rake db:migrate"
 alias rdrt="DISABLE_DATABASE_ENVIRONMENT_CHECK=1 RAILS_ENV=test bundle exec rake db:rollback"
