@@ -65,6 +65,10 @@ dot submodule update --remote --merge
 dot commit
 ```
 
+#### Other update notes:
+
+- When updating the `fzf` submodule, the main executable should be updated as well via homebrew, i.e. `brew upgrade fzf`
+
 ### Deleting submodules
 
 Assuming the plugin is located at `~/.vim/pack/foo/start/vim-plugin-name/`
