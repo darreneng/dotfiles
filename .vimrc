@@ -95,6 +95,7 @@ if has('nvim')
   autocmd BufWinEnter,WinEnter term://* startinsert
   " Go back to normal mode when leaving a terminal window
   autocmd BufLeave term://* stopinsert
+  tnoremap <C-\><C-\> <C-\><C-n>
 endif
 
 " Enable fzf.vim plugin. Only works when fzf is installed via homebrew
