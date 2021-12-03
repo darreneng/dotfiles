@@ -64,3 +64,6 @@
 [submodule ".vim/pack/foo/start/vim-endwise"]
 	path = .vim/pack/foo/start/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
+[submodule ".vim/pack/foo/start/nvim-lspconfig"]
+	path = .vim/pack/foo/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
