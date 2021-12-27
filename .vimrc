@@ -138,8 +138,13 @@ augroup END
 
 " =============== LSP config ==============
 
+" auto start coq (needs to be before require)
+let g:coq_settings = { 'auto_start': v:true }
+
 lua << EOF
 local nvim_lsp = require('lspconfig')
+
+local coq = require("coq")
 
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
@@ -178,14 +183,22 @@ end
 -- map buffer local keybindings when the language server attaches
 local servers = { 'solargraph', 'tsserver' }
 for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup {
-    on_attach = on_attach,
-    flags = {
-      debounce_text_changes = 150,
-    }
-  }
+  nvim_lsp[lsp].setup(
+    coq.lsp_ensure_capabilities(
+      {
+        on_attach = on_attach,
+        flags = {
+          debounce_text_changes = 150,
+        }
+      }
+    )
+  )
 end
 EOF
+
+" ==== coq
+
+let g:coq_settings = { 'display.icons.mode': 'none' }
 
 " =============== yay COLORS ==============
 
