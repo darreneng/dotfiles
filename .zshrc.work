@@ -1,13 +1,3 @@
-function gh_remote_path() { # Parses the 'remote path' of the repo: username/repo
-  GH_PATH=`git remote -v | tr ':' ' ' | tr '.' ' ' | awk '/push/ {print $4}'`
-  echo ${GH_PATH#com/}
-}
-
-function ghpr() { # Opens new PR for current branch on GitHub, works for all repos
-  echo 'Opening branch on Github...'
-  open "https://github.com/$(gh_remote_path)/pull/new/$(current_branch)"
-}
-
 # zsh doesnt like rake tasks with args apparently
 alias brake="noglob bundle exec rake"
 alias rake='noglob rake'
