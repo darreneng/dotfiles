@@ -51,5 +51,3 @@ eval "$(rbenv init -)"
 # Use fnm to manage node version
 eval "$(fnm env --multi)"
 
-# opam configuration
-test -r /Users/appfolio/.opam/opam-init/init.zsh && . /Users/appfolio/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
