@@ -16,6 +16,7 @@ Clone the repository without checking out a working tree. Then configure it so t
 ```sh
 cd ~
 git clone --no-checkout https://github.com/darreneng/dotfiles.git
+cd ~/dotfiles
 git config --local core.worktree $HOME
 git config --local status.showUntrackedFiles no
 ```
@@ -28,6 +29,22 @@ git --git-dir=$HOME/dotfiles/.git checkout
 ```
 
 To make dotfiles easier to work with, both `.zshrc` files define a `dot` alias that can be run from anywhere.
+
+#### Install other dependencies
+
+TODO: maybe make this a brewfile instead?
+```
+brew install neovim fzf pure ripgrep fd
+```
+
+Install ctags
+```
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
+```
+
+#### Other fun stuff
+
+- [Remap option key for iTerm2](https://iterm2.com/faq.html) so that moving around panes works
 
 ### Updating the repo
 
