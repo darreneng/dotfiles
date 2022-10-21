@@ -93,6 +93,7 @@ alias git='noglob git'
 # more git aliases
 alias gcfp='git cat-file -p'
 alias gai='git add --interactive'
+alias grbi='git rebase --interactive --autostash'
 
 # use `dot` instead of `git` when working with dotfiles
 alias dot='/usr/bin/git --git-dir=$HOME/dotfiles/.git'
