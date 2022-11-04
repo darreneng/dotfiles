@@ -8,6 +8,22 @@ This setup was originally inspired by this [dotfiles tutorial](https://www.atlas
 
 ### Starting from scratch
 
+#### New computer Stuff
+
+Install [homebrew](https://brew.sh/) (Make sure you run the commands after installation to add to profile)
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Install [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+#### After everything else is set up
+
 Clone the repository without checking out a working tree. Then configure it so that:
 
 - the home directory is the default working tree.
